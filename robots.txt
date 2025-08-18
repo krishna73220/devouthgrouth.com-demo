@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+
+Sitemap: https://www.devoutgrowth.com/sitemap.xml

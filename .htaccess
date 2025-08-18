@@ -1,0 +1,56 @@
+RewriteEngine On
+RewriteBase /
+
+# Force HTTPS first
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Force www second
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# Hide .php extension for URLs like /our-team or /blog
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
+
+# Clean URL rewrite for blog detail pages
+RewriteRule ^blog/([a-zA-Z0-9-]+)/?$ blog/blog-detail.php?slug=$1 [L,QSA]
+
+# 301 redirects for SEO URLs
+Redirect 301 /Search-Engine-Optimization.html /search-engine-optimization.html
+Redirect 301 /blog/Advertising-and-Marketing-two-Indispensable-part-of-Organization.html /blog/advertising-and-marketing-two-indispensable-part-of-organization.html
+Redirect 301 /blog/How-content-Marketing-is-changing-perspective-of-digital-marketing.html /blog/how-content-marketing-is-changing-perspective-of-digital-marketing.html
+
+Redirect 301 /blogs/digital-marketing-services-koramangala/ /blog/digital-marketing-services-koramangala.html
+Redirect 301 /blogs/how-to-choose-the-best-digital-marketing-agency-in-koramangala/ /blog/how-to-choose-the-best-digital-marketing-agency-in-koramangala.html
+
+Redirect 301 /blogs/generative-ai-trends-and-tools/ /blog/generative-ai-trends-and-tools.html
+Redirect 301 /blogs/How-content-Marketing-is-changing-perspective-of-digital-marketing/ /blog/how-content-marketing-is-changing-perspective-of-digital-marketing.html
+Redirect 301 /blogs/six-conversion-champions-supercharge-success-proven-strategies/ /blog/six-conversion-champions-supercharge-success-proven-strategies.html
+Redirect 301 /blogs/nurturing-growth-digital-marketing-agency-thrive-conflict/ /blog/nurturing-growth-digital-marketing-agency-thrive-conflict.html
+Redirect 301 /blogs/unlocking-success-best-frequency-marketing-emails/ /blog/unlocking-success-best-frequency-marketing-emails.html
+
+Redirect 301 /blogs/digital-marketing-koramangala-startups/ /blog/digital-marketing-koramangala-startups.html
+Redirect 301 /blogs/advertising-and-marketing-two-indispensable-part-of-organization/ /blog/advertising-and-marketing-two-indispensable-part-of-organization.html
+
+# Custom 404 page
+ErrorDocument 404 /404.html
+
+# Block access to .htaccess file
+<FilesMatch "^\.ht">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>
+
+# Performance and security headers (optional)
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/javascript text/plain text/xml application/javascript application/x-javascript application/xml application/rss+xml application/atom+xml image/svg+xml
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>

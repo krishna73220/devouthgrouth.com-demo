@@ -1,0 +1,199 @@
+ /* Dg add model styling area started */
+    .dg-add-model .modal-content {
+    border-top:5px solid #ff1f8e !important;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px!important;
+    max-width: 100%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3)!important;
+    }
+    .dg-add-model .modal-content input, textarea{
+       width: 100%;
+       background-color: #fff;
+       padding:8px;
+       border-radius: 4px;
+       color: #000;
+       border:1px solid grey;
+    }
+    .dg-add-model .modal-content .side-btn{
+       width: 100%;
+       background: linear-gradient(to right, #ffbd84 0, #ff1f8e 100%);
+       margin-top:10px;
+       color: #fff;
+       padding:12px;
+       border-radius:30px;
+       border:none;
+    }
+    /* Modal header */
+   .dg-add-model .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    /* Form styling */
+.dg-add-model form input[type="text"],
+.dg-add-model form input[type="email"],
+.dg-add-model form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dg-add-model form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff1f8e;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dg-add-model form input[type="submit"]:hover {
+  background-color: #ff1f8e;
+}
+.dg-add-model form select {
+   width: 100%;
+   padding: 10px;
+   margin: 5px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   background-color: #fff;
+   font-size: 1rem;
+    color: #172b43;
+    outline: 0;
+ }
+ .dg-add-model form select:focus {
+   border-color: #a9a9a9;
+   outline: none;
+ }
+ .dg-add-model form input:focus {
+   border-color: #a9a9a9;
+   outline: none;
+   box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+ }
+
+
+ .dg-add-model textarea {
+   padding: 10px;
+   margin: 0 0 15px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+   outline: none;
+ }
+ .dg-add-model textarea:focus {
+   border-color: #a9a9a9;
+   box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+ }
+ .dg-add-model input[type="file"] {
+   padding: 11px 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   background-color: #fff;
+   font-size: 16px;
+   color: #333;
+   width: 100%;
+   cursor: pointer;
+ }
+    
+ .dg-add-model select option {
+   padding: 10px;
+   font-size: 16px;
+   background-color: #fff;
+ }
+ 
+ 
+    @media only screen and (min-width: 600px) {
+      .dg-add-model .modal-dialog {
+          max-width: 645px !important;
+      }
+      .storiss{
+          font-size: 37px!important;
+          line-height: 1.3em;
+      }
+      .seo-engne{
+          font-size: 51px!important;
+      }
+  }
+
+  .dg-add-model .modal {
+      background: #00000085 !important;
+  }
+
+  .modal-backdrop.show {
+      opacity: 0 !important;
+  }
+
+  .dg-add-model .modal-box .modal-dialog {
+      width: 645px;
+      margin: 50px auto 0;
+  }
+
+  .dg-add-model .modal.fade .modal-dialog {
+      transform: rotate(10deg);
+      transition: all 400ms cubic-bezier(.47, 1.64, .41, .8);
+  }
+
+  .dg-add-model .modal.show .modal-dialog {
+      transform: rotate(0);
+  }
+
+  .dg-add-model .modal-box .modal-dialog .modal-content {
+      text-align: center;
+      border: none;
+      box-shadow: none;
+  }
+
+  .dg-add-model .modal-box .modal-dialog .modal-content .close {
+      color: #585858;
+      font-size: 30px;
+      line-height: 18px;
+      text-shadow: none;
+      opacity: 1;
+      overflow: hidden;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      transition: all 0.3s;
+      z-index: 1;
+  }
+
+  .dg-add-model .modal-box .modal-dialog .modal-content .close span {
+      margin: -2px 0 0 0;
+      display: block;
+  }
+
+  .dg-add-model .modal-content .close:hover {
+      color: #585858;
+  }
+
+ .dg-add-model #myModal textarea.form-control {
+   resize: none;
+   }
+   
+   .dg-add-model #myModal .btn-primary {
+   background: linear-gradient(to right, #ffbd84, #000);
+   border: none;
+   padding: 10px 20px;
+   border-radius: 30px;
+   font-weight: bold;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+   }
+   
+   .dg-add-model #myModal .btn-primary:hover {
+   background: linear-gradient(to right, #ff1f8e, #ffbd84);
+   }
+  @media only screen and (max-width: 767px) {
+      .dg-add-model .modal-box .modal-dialog {
+          width: 95% !important;
+          margin: 35px auto 0;
+      }
+      .dg-add-model .modal-content {
+         padding: 12px;
+      } 
+      
+  }

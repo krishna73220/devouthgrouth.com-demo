@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^blog/([a-zA-Z0-9-]+)\.php/?$ blog/blog-detail.php?slug=$1 [L,QSA]
+RewriteRule ^blog/([a-zA-Z0-9-]+)/?$ blog/blog-detail.php?slug=$1 [L,QSA]

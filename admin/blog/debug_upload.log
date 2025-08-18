@@ -1,0 +1,13 @@
+Array
+(
+    [upload] => Array
+        (
+            [name] => chemotherapy (1).jpg
+            [full_path] => chemotherapy (1).jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpRpTrQd
+            [error] => 0
+            [size] => 143051
+        )
+
+)

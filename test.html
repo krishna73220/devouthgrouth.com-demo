@@ -1,0 +1,28 @@
+<style>
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem; /* box ke beech gap */
+  }
+
+  .tile {
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  /* har box ko thoda niche karne ke liye */
+  .tile:nth-child(1) { margin-top: 0rem; }
+  .tile:nth-child(2) { margin-top: 1rem; }
+  .tile:nth-child(3) { margin-top: 2rem; }
+  .tile:nth-child(4) { margin-top: 3rem; }
+</style>
+
+<div class="tiles">
+  <div class="tile">Box 1</div>
+  <div class="tile">Box 2</div>
+  <div class="tile">Box 3</div>
+  <div class="tile">Box 4</div>
+</div>

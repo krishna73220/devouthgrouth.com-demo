@@ -1,0 +1,13 @@
+/*
+Project Name: DG - Admin & Dashboard Panel
+Author: Er. Hrisheekesh Kumar
+Website: https://www.devoutgrowth.com/
+Developer Contact: khrisheekesh1@gmail.com
+File: Custom Css File
+*/
+
+.navbar-menu .navbar-nav .nav-link.active  {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0;
+    border-radius: 5px;
+}
