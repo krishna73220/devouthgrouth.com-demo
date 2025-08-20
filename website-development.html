@@ -61,66 +61,351 @@
 
 </head>
 
-<body>
+<body class="dev-hr">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQW5XDQZ" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-
     <!-- Navbar section -->
     <special-header></special-header>
     <!-- Navbar section exit -->
+    <style>
+        body {
+            background-color: #192335;
+        }
 
+        .dev-hr .scroll-up {
+            border: 0.5px solid white;
+        }
+
+        .footer_wrapper {
+            background-color: #192335;
+            color: white;
+        }
+
+        .footer_wrapper h5 {
+            color: white;
+        }
+
+        .testimonial_bg {
+            background-image: none;
+        }
+
+        .footer_wrapper .copyright-section {
+            background: #131212;
+        }
+
+        .header_wrappe {
+            background-color: #131212;
+        }
+
+        text-inline {
+            display: inline;
+        }
+
+
+        /* ==== Video background styles ==== */
+        .breadcrumb-section.dg-video-bg {
+            position: relative;
+            min-height: 480px;
+            /* apne hisaab se height set karna */
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            isolation: isolate;
+            color: #fff;
+        }
+
+        .dg-video-bg__video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+            pointer-events: none;
+        }
+
+        .dg-video-bg__overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            /* thoda dark overlay readability ke liye */
+            z-index: -1;
+        }
+
+        .dg-video-bg__content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .breadcrumb-text span {
+            font-size: 16px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .breadcrumb-text h1 {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .web-dev-dg .breadcrumb-image img {
+            height: 342px;
+            
+        }
+    </style>
     <!-- bredcumb started here -->
-    <section class="breadcrumb-section">
-        <div class="container breadcrumb-container">
-            <div class="row">
-                <div class="breadcrumb-content">
-                    <div class="col-md-6">
-                        <div class="breadcrumb-text">
-                            <span>Our Services</span>
-                            <h1>Website And App Development</h1>
-                            <p>Your website is the immediate reflection of your business and one of the many significant
-                                parts of your larger, more complex online existence. We specialize in crafting dynamic
-                                websites, innovative mobile applications, and robust e-commerce solutions.</p>
+    <section class="breadcrumb-section dg-video-bg web-dev-dg">
+        <!-- Background video -->
+        <video class="dg-video-bg__video" autoplay muted loop playsinline preload="metadata"
+            poster="digital-marketing-company/dg-img/fallback.jpg" aria-hidden="true">
+            <source src="https://www.netguru.com/hubfs/_N23/assets/hero/videos/hero-background-03.mp4" type="video/mp4">
+        </video>
+        <div class="dg-video-bg__overlay"></div>
+        <div class="container breadcrumb-container dg-video-bg__content">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="breadcrumb-text text-white">
+                        <span class="my-4">Our Services</span>
+                        <h1 class="text-white">Website <text-inline class="highlight">Development</text-inline>
+                        </h1>
+                        <p class="text-white msg">Your website is the immediate reflection of your business and one of
+                            the
+                            many significant
+                            parts of your larger, more complex online existence. We specialize in crafting dynamic
+                            websites, innovative mobile applications, and robust e-commerce solutions.</p>
+                    </div>
+                    <div class="row g-2 my-4">
+                        <!-- Google play store button -->
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <a href="#"> <img src="https://stackbros.in/mizzle/assets/images/elements/app-store.svg"
+                                    class="btn-transition" alt="google-store"> </a>
+                        </div>
+                        <!-- App store button -->
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <a href="#"> <img src="https://stackbros.in/mizzle/assets/images/elements/google-play.svg"
+                                    class="btn-transition" alt="app-store"> </a>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="breadcrumb-image d-sm-none d-md-block d-lg-block d-none text-center">
-                            <img src="digital-marketing-company/dg-img/website.png" class="img-fluid"
-                                alt="seo friendly website development agency">
-                        </div>
+
+                </div>
+                <div class="col-md-6 d-none d-md-block text-center">
+                    <div class="breadcrumb-image">
+                        <img src="digital-marketing-company/website-home.png" class="img-fluid"
+                            alt="seo friendly website development agency">
+
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- bredcumb end here -->
 
-    <section class="testimonial_bg contact_us">
+    <style>
+        .web-dev-dg .platform-card {
+            background: #273041;
+            box-shadow: 0px 4px 26px 0px rgba(2, 5, 17, .14);
+            border: none;
+            border-radius: 8px;
+            padding: 50px 20px;
+            height: 100%;
+            text-align: left;
+            transition: all 0.3s ease;
+            border: 0.2px solid #67758b;
+        }
+
+        .web-dev-dg .platform-card:hover {
+            scale: 1.05;
+        }
+
+        .web-dev-dg .bg-darked:hover {
+            scale: 1.05;
+        }
+
+        .web-dev-dg .platform-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .web-dev-dg .section-heading {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .web-dev-dg .highlight {
+            background: #2CBCA5;
+            background: linear-gradient(90deg, rgba(44, 188, 165, 0) 21%, rgba(44, 188, 165, 0.96) 73%);
+            padding: 0 6px;
+            border-radius: 20px;
+        }
+
+        /* --- Niche shift for 2nd, 3rd and 4th box --- */
+        .web-dev-dg .row.g-4>div:nth-child(2) {
+            position: relative;
+            top: 30px;
+            /* yahan aap value adjust kar sakte ho */
+        }
+
+        .web-dev-dg .row.g-4>div:nth-child(3) {
+            position: relative;
+            top: 60px;
+        }
+
+        .web-dev-dg .row.g-4>div:nth-child(4) {
+            position: relative;
+            top: 90px;
+        }
+
+        .web-dev-dg .msg {
+            color: rgba(255, 255, 255, 0.653);
+        }
+    </style>
+
+    <section class="py-5 web-dev-dg">
         <div class="container">
+            <div class="row justify-content-between align-items-center mb-5">
+                <div class="col-lg-6">
+                    <h2 class="section-heading text-white">
+                        Building apps on mobile platforms <br>
+                        where your <span class="highlight">customers are</span>
+                    </h2>
+                </div>
+                <div class="col-lg-5 text-muted ">
+                    Deliver an omnichannel experience to users wherever they may be.
+                </div>
+            </div>
+            <!-- yahan align-items-stretch lagaya -->
+            <div class="row g-4 align-items-stretch ">
+                <!-- iOS -->
+                <div class="col-md-3 ">
+                    <div class="platform-card h-100">
+                        <div class="platform-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <h5 class="fw-bold text-white">iOS</h5>
+                        <p class=" mb-0 msg">
+                            Architect mobile apps for devices with the iOS operating system: iPhones, iPads, Apple TVs,
+                            and App Clips.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Android -->
+                <div class="col-md-3">
+                    <div class="platform-card h-100">
+                        <div class="platform-icon">
+                            <i class="fab fa-android"></i>
+                        </div>
+                        <h5 class="fw-bold text-white">Android</h5>
+                        <p class="text-muted mb-0 msg">
+                            Create mobile apps for all the Android-based devices out there – smartphones, tablets, and
+                            TVs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cross-Platform -->
+                <div class="col-md-3">
+                    <div class="platform-card h-100">
+                        <div class="platform-icon">
+                            <i class="fas fa-th-large"></i>
+                        </div>
+                        <h5 class="fw-bold text-white">Cross-Platform</h5>
+                        <p class="text-muted mb-0 msg">
+                            Build mobile apps that can be deployed on both iOS and Android (and even as desktop and web
+                            apps).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Wearables -->
+                <div class="col-md-3 ">
+                    <div class="platform-card h-100">
+                        <div class="platform-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h5 class="fw-bold text-white">Wearables</h5>
+                        <p class="text-muted mb-0 msg">
+                            Get mobile apps for wearable devices such as smartwatches or fitness trackers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .web-dev-dg .bg-darked {
+            background: #273041;
+            box-shadow: 0px 4px 26px 0px rgba(2, 5, 17, .14);
+            border: 0.2px solid #67758b;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+    </style>
+
+    <section class="contact_us web-dev-dg">
+        <div class="container mt-5">
             <div class="row pt-md-5">
                 <div class="col-lg-6 col-md-6">
-                    <div class="about-agency performance-marketings">
+                    <div>
                         <div class="about-wrap">
-                            <img src="digital-marketing-company/web-development.webp" class="img-fluid"
+                            <img src="digital-marketing-company/mobile.png" class="img-fluid"
                                 alt="creative web development agency">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 pl-5">
-                    <div class="about-agency perform pt-md-4 mt-3">
+                <div class="col-lg-6 col-md-6 pl-5 pe-5">
+                    <div class=" perform pt-md-4 mt-3">
                         <div class="breadcrumb-text about-dg-title">
                             <span>Devout Growth</span>
-                            <h3>Ideation to Dominance in the Digital Arena.</h3>
+                            <h3 class="text-white">Ideation to Dominance in the Digital <text-inline
+                                    class="highlight">Arena</text-inline>
+                            </h3>
                         </div>
                         <div class="expert-sub-titles">
-                            <p>We create websites or apps that reflect your brand identity and ensure seamless
+                            <p class="msg">We create websites or apps that reflect your brand identity and ensure
+                                seamless
                                 navigation for an enhanced user experience.</p>
-                            <div class="button-wrapper-digital pt-md-4">
+                            <div class="row text-center g-3">
+                                <div class="col-md-4">
+                                    <div class="bg-darked p-4 h-100 ">
+                                        <h2 class="fw-bold mb-2 text-white">5</h2>
+                                        <p class="mb-0 msg text-center">weeks to</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="bg-darked p-4 h-100 ">
+                                        <h2 class="fw-bold mb-2 text-white">10,000+</h2>
+                                        <p class="mb-0 msg text-center">AI/ML models</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="bg-darked p-4 h-100 border">
+                                        <h2 class="fw-bold mb-2 text-white">10</h2>
+                                        <p class="mb-0 msg text-center">our NPS from</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-wrapper-digital pt-md-2 my-4">
                                 <a class="button-digital button-xl" href="contact-us.html">
-                                    <span class="button-content">
+                                    <span class="button-content text-white">
                                         <span class="button-text">Contact Us</span>
                                         <span class="button-icon">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
@@ -129,45 +414,40 @@
                                 </a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
             <!-- Here counter area started -->
-            <div class="dg-counter-main about-contr pt-md-5 mt-4 mb-4">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="container_counter">
-                            <h2 class="heading counter" data-count="150">0+</h2>
-                            <p class="description">EXECUTED PROJECTS</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="container_counter">
-                            <h2 class="heading counter" data-count="120">0+</h2>
-                            <p class="description">APPRECIATION RECEIVED</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="container_counter">
-                            <h2 class="heading counter" data-count="8">0+</h2>
-                            <p class="description">INDUSTRY EXPERIENCE</p>
-                        </div>
-                    </div>
+            <style>
+                .dev-hr hr {
+                    border: none;
+                    /* default border हटाने के लिए */
+                    border-top: 1px solid #fff;
+                    /* white line */
+                }
+            </style>
 
-                </div>
-            </div>
             <!-- clients value area started -->
-            <div class="clients-value boosting-busines pt-md-5">
-                <div class="section-title pt-md-3 pb-5">
-                    <h2>What we do</h2>
-                    <p>From UI/UX to database integration, we create screen adaptive website or application.</p>
+            <div class="clients-value boosting-busines pt-md-5 web-dev-dg">
+                <hr>
+                <div class="section-title pt-3 pt-md-3 pb-3 pb-md-5 mt-3 mt-md-5 text-center">
+                    <h2 class="text-white ">
+                        <text-inline class="highlight">What we do</text-inline>
+                    </h2>
+                    <p class="msg">
+                        From UI/UX to database integration, we create screen adaptive website or application te screen
+                        adaptive website.
+                    </p>
                 </div>
+
                 <div class="row web-aap-row">
                     <div class="col-lg-8 col-md-8 web-aap-deve-bg">
-                        <div class="dg-paid-media clints-results fw-bold perfomace-bg position-relative py-5 my-5">
+                        <div
+                            class="dg-paid-media clints-results fw-bold web-dev-dg perfomace-bg position-relative py-5 my-5">
                             <div class="ideas_corner">
                                 <div class="ideas-influence-widget clints-widget">
-                                    <h2 class="fw-bold">Save more and get visibility for your business.</h2>
+                                    <h2 class="fw-bold text-white">Save more and get visibility for your business.</h2>
                                     <button type="submit" class="main-btn rounded-2 mt-3 text-white">Get
                                         started</button>
                                 </div>
@@ -175,62 +455,70 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4">
-                        <div class="dg-paid-media clints-results">
+                        <div class="dg-paid-media clints-results bg-darked">
                             <div class="ideas_corner">
                                 <div class="paid-media-icon m-0">
-                                    <img src="assets/svg/keywords.png" width="" alt="performance marketing agency"
-                                        class="img-fluid media-icon">
+                                    <img style="filter: brightness(0) invert(1);" src="assets/svg/keywords.png" width=""
+                                        alt="performance marketing agency" class="img-fluid media-icon">
                                 </div>
                                 <div class="ideas-influence-widget clints-widget">
-                                    <h5 class="influenc my-2">Performance</h5>
-                                    <p>Partner with Our Experts to Create a Seamless User Experience and Embrace the
+                                    <h5 class="influenc my-2 text-white">Performance</h5>
+                                    <p class="msg">Partner with Our Experts to Create a Seamless User Experience and
+                                        Embrace the
                                         Mobile Advantage.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4">
-                        <div class="dg-paid-media clints-results">
+                        <div class="dg-paid-media clints-results bg-darked">
                             <div class="ideas_corner">
                                 <div class="paid-media-icon m-0">
-                                    <img src="assets/svg/seo-content.png" alt="performance marketing agency" width="55"
-                                        class="img-fluid media-icon">
+                                    <img style="filter: brightness(0) invert(1);" src="assets/svg/keywords.png" width=""
+                                        alt="performance marketing agency" class="img-fluid media-icon">
                                 </div>
                                 <div class="ideas-influence-widget clints-widget">
-                                    <h5 class="influenc my-2">Web Wonder: Turning Imagination into Interactive Reality
-                                    </h5>
+                                    <h5 class="influenc my-2 text-white">Performance</h5>
+                                    <p class="msg">Partner with Our Experts to Create a Seamless User Experience and
+                                        Embrace the
+                                        Mobile Advantage.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4">
-                        <div class="dg-paid-media clints-results ">
+                        <div class="dg-paid-media clints-results bg-darked">
                             <div class="ideas_corner">
                                 <div class="paid-media-icon m-0">
-                                    <img src="assets/svg/hourglass.png" alt="Digital performance marketing agency"
-                                        class="img-fluid media-icon">
+                                    <img style="filter: brightness(0) invert(1);" src="assets/svg/keywords.png" width=""
+                                        alt="performance marketing agency" class="img-fluid media-icon">
                                 </div>
                                 <div class="ideas-influence-widget clints-widget">
-                                    <h5 class="influenc my-2">Redefining E-commerce Success: Empowering Your Unique
-                                        Online Store.</h5>
+                                    <h5 class="influenc my-2 text-white">Performance</h5>
+                                    <p class="msg">Partner with Our Experts to Create a Seamless User Experience and
+                                        Embrace the
+                                        Mobile Advantage.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4">
-                        <div class="dg-paid-media clints-results ">
+                        <div class="dg-paid-media clints-results bg-darked">
                             <div class="ideas_corner">
                                 <div class="paid-media-icon m-0">
-                                    <img src="assets/svg/perform.png" alt="b2b performance marketing agency"
-                                        class="img-fluid media-icon">
+                                    <img style="filter: brightness(0) invert(1);" src="assets/svg/keywords.png" width=""
+                                        alt="performance marketing agency text-white" class="img-fluid media-icon">
                                 </div>
                                 <div class="ideas-influence-widget clints-widget">
-                                    <h5 class="influenc my-2">App-tastic Creations: Crafting Innovative Mobile
-                                        Experiences.</h5>
+                                    <h5 class="influenc my-2 text-white">Performance</h5>
+                                    <p class="msg">Partner with Our Experts to Create a Seamless User Experience and
+                                        Embrace the
+                                        Mobile Advantage.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
 
                 </div>
 
@@ -243,21 +531,27 @@
             filter: grayscale(100%);
             transition: filter 0.25s ease;
         }
+
+        .app-dev-btn span {
+            color: white !important;
+        }
     </style>
 
     <!-- Meet the team section started here -->
-    <section class=" container">
+    <section class=" container web-dev-dg">
         <div class="row ">
             <div class="col-md-6 d-flex align-items-center">
                 <div class="section-title pt-md-5 pb-2">
-                    <h2>Why are we different?</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, modi quidem odio tenetur non
+                    <h2 class="text-white">Why are we <text-inline class="highlight">different ?</text-inline>
+                    </h2>
+                    <p class="msg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, modi quidem odio
+                        tenetur non
                         porro suscipit magnam necessitatibus distinctio consectetur quis perferendis! Qui id corrupti
                         omnis iure? Tempore, aliquid quisquam.</p>
-                    <div class="button-wrapper-digital pt-md-4">
+                    <div class="button-wrapper-digital pt-md-2 my-4">
                         <a class="button-digital button-xl" href="contact-us.html">
-                            <span class="button-content">
-                                <span class="button-text">Contact Us</span>
+                            <span class="button-content app-dev-btn">
+                                <span class="button-text text-white">Contact Us</span>
                                 <span class="button-icon">
                                     <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                 </span>
@@ -269,20 +563,71 @@
             <div class="col-md-6">
                 <div>
                     <!-- <img class="img-fluid " src="digital-marketing-company/mob.png" alt=""> -->
-                    <img class="img-fluid " src="digital-marketing-company/mob-b.jpg" alt="">
+                    <img class="img-fluid " src="digital-marketing-company/mob-b-Photoroom.png" alt="">
                 </div>
             </div>
         </div>
     </section>
     <hr>
     <!-- partners area started here -->
-    <section class="performance-wrapper">
+
+    <section style="position: relative; overflow: hidden;" class="web-dev-dg">
+        <!-- Background Video -->
+        <video autoplay muted loop playsinline
+            style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-1;">
+            <source src="https://www.netguru.com/hubfs/_N19%20Modules/Homepage/Videos/ng-com-header-background.mp4"
+                type="video/mp4">
+        </video>
+
+        <!-- Content -->
+        <div class="container-fluid py-5" style="position: relative; z-index:1;">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <div class="section-title  pb-2">
+                            <h2 class="text-white">Why <text-inline class="highlight">Devoutgrowth ?</text-inline>
+                            </h2>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <p class="msg">
+                            We speed up AI adoption and ramp up engineering and design teams to help you lead your
+                            industry.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row text-center justify-content-center">
+                    <div class="col-md-3 mb-3">
+                        <div class="p-4 bg-darked">
+                            <h2 class="fw-bold text-white">17+</h2>
+                            <p class="text-white-50 mb-0">Years on market</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="p-4 bg-darked">
+                            <h2 class="fw-bold text-white">400+</h2>
+                            <p class="text-white-50 mb-0">People on board</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="p-4 bg-darked">
+                            <h2 class="fw-bold text-white">2500+</h2>
+                            <p class="text-white-50 mb-0">Projects delivered</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
 
         <div class="container">
-            <div class="section-title pt-md-5 pb-2">
-                <h2>Why are we different?</h2>
-                <p>We create user-friendly interfaces, secure payment gateways and seamless navigation</p>
-            </div>
+
             <div class="row">
                 <div class="col-md-12 text-center mb-4">
                     <div class="dg-web-apps dg-diffrents"></div>
@@ -316,8 +661,22 @@
             </div>
         </div>
     </section>
+
+    <style>
+        .web-dev-dg .accordion-button::after {
+            flex-shrink: 0;
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-left: auto;
+            content: "";
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: 1.25rem;
+            transition: transform .2s ease-in-out;
+        }
+    </style>
     <!--faq-->
-    <section class="faq">
+    <section class="faq web-dev-dg">
         <div class="container">
             <div class="bsb-faq-3 py-3 py-md-5 py-xl-8">
                 <div class="row justify-content-center">
@@ -326,18 +685,19 @@
                             <div class="accordion-item bg-transparent border-top border-bottom py-3">
                                 <h2 class="accordion-header" id="faqAccountHeading1">
                                     <button
-                                        class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary"
+                                        class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary text-white"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse1"
                                         aria-expanded="false" aria-controls="faqAccountCollapse1">
-                                        <img class="conversation_img" src="digital-marketing-company/conversation.png"
-                                            alt="conversation"> Is
-                                        it more affordable to develop an app or a website?
+                                        <img style="filter: brightness(0) invert(1);" class="conversation_img"
+                                            src="digital-marketing-company/conversation.png" alt="conversation"> Is it
+                                        more affordable to develop an app or a website?
                                     </button>
                                 </h2>
                                 <div id="faqAccountCollapse1" class="accordion-collapse collapse"
                                     aria-labelledby="faqAccountHeading1">
                                     <div class="accordion-body">
-                                        <p>Generally, websites are more affordable to develop and launch. However,
+                                        <p class="msg text-justify">Generally, websites are more affordable to develop
+                                            and launch. However,
                                             mobile apps offer deeper
                                             engagement and better performance for specific user needs. At Devout Growth,
                                             we help you choose the
@@ -350,18 +710,19 @@
                             <div class="accordion-item bg-transparent border-bottom py-3">
                                 <h2 class="accordion-header" id="faqAccountHeading2">
                                     <button
-                                        class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary"
+                                        class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary text-white"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse2"
                                         aria-expanded="false" aria-controls="faqAccountCollapse2">
-                                        <img class="conversation_img" src="digital-marketing-company/conversation.png"
-                                            alt="conversation"> How
+                                        <img style="filter: brightness(0) invert(1);" class="conversation_img"
+                                            src="digital-marketing-company/conversation.png" alt="conversation"> How
                                         long does it take to build a website?
                                     </button>
                                 </h2>
                                 <div id="faqAccountCollapse2" class="accordion-collapse collapse"
                                     aria-labelledby="faqAccountHeading2">
                                     <div class="accordion-body">
-                                        <p>The timeline varies based on complexity, but a standard website typically
+                                        <p class="msg text-justify">The timeline varies based on complexity, but a
+                                            standard website typically
                                             takes 2 to 6 weeks from
                                             planning to launch.</p>
                                     </div>
@@ -372,21 +733,22 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="accordion accordion-flush" id="faqOrder">
-                            <div class="accordion-item bg-transparent border-bottom py-3">
+                            <div class="accordion-item bg-transparent border-top border-bottom py-3">
                                 <h2 class="accordion-header" id="faqAccountHeading3">
                                     <button
-                                        class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary"
+                                        class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary text-white"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse3"
                                         aria-expanded="false" aria-controls="faqAccountCollapse3">
-                                        <img class="conversation_img" src="digital-marketing-company/conversation.png"
-                                            alt="conversation"> Do
-                                        you create mobile responsive websites?
+                                        <img style="filter: brightness(0) invert(1);" class="conversation_img"
+                                            src="digital-marketing-company/conversation.png" alt="conversation"> Do you
+                                        create mobile responsive websites?
                                     </button>
                                 </h2>
                                 <div id="faqAccountCollapse3" class="accordion-collapse collapse"
                                     aria-labelledby="faqAccountHeading3">
                                     <div class="accordion-body">
-                                        <p>Yes, we specialize in building fully mobile-responsive websites that deliver
+                                        <p class="text-justify msg">Yes, we specialize in building fully
+                                            mobile-responsive websites that deliver
                                             a seamless browsing
                                             experience across Android and iOS devices.</p>
                                     </div>
@@ -395,18 +757,19 @@
                             <div class="accordion-item bg-transparent border-bottom py-3">
                                 <h2 class="accordion-header" id="faqAccountHeading4">
                                     <button
-                                        class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary"
+                                        class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary text-white"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse4"
                                         aria-expanded="false" aria-controls="faqAccountCollapse4">
-                                        <img class="conversation_img" src="digital-marketing-company/conversation.png"
-                                            alt="conversation">
-                                        Does good website design effectively engage audiences and drive conversions?
+                                        <img style="filter: brightness(0) invert(1);" class="conversation_img"
+                                            src="digital-marketing-company/conversation.png" alt="conversation">
+                                        Does good website design effectively engage audiences?
                                     </button>
                                 </h2>
                                 <div id="faqAccountCollapse4" class="accordion-collapse collapse"
                                     aria-labelledby="faqAccountHeading4">
                                     <div class="accordion-body">
-                                        <p>A well-structured UI/UX, optimized page load speed, intuitive navigation, and
+                                        <p class="msg text-justify">A well-structured UI/UX, optimized page load speed,
+                                            intuitive navigation, and
                                             responsive design
                                             collectively enhance user interaction. From a development standpoint, these
                                             elements not only
@@ -423,13 +786,14 @@
         </div>
     </section>
     <!-- contact area started here -->
-    <section class="join_with_dg">
+    <section class="join_with_dg web-dev-dg" style="background-color: #192335;">
         <div class="container">
             <div class="row cadder-area">
                 <div class="col-md-6">
                     <div class="join-title">
-                        <h2>Want to join? </h2>
-                        <p>Sign Up to the team who are devoted towards Growth and make Growth devoted towards
+                        <h2><text-inline class="highlight">Want to join?</text-inline> </h2>
+                        <p class="msg">Sign Up to the team who are devoted towards Growth and make Growth devoted
+                            towards
                             <strong>YOU!</strong>
                         </p>
                     </div>
@@ -442,6 +806,7 @@
             </div>
         </div>
     </section>
+    <hr>
     <!-- Footer section -->
     <special-footer> </special-footer>
     <!-- Footer section exit -->
