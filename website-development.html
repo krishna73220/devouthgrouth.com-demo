@@ -103,6 +103,7 @@
         text-inline {
             display: inline;
         }
+
         /* ==== Video background styles ==== */
         .breadcrumb-section.dg-video-bg {
             position: relative;
@@ -114,6 +115,7 @@
             isolation: isolate;
             color: #fff;
         }
+
         .dg-video-bg__video {
             position: absolute;
             inset: 0;
@@ -123,6 +125,7 @@
             z-index: -2;
             pointer-events: none;
         }
+
         .dg-video-bg__overlay {
             position: absolute;
             inset: 0;
@@ -130,24 +133,28 @@
             /* thoda dark overlay readability ke liye */
             z-index: -1;
         }
+
         .dg-video-bg__content {
             position: relative;
             z-index: 1;
         }
+
         .breadcrumb-text span {
             font-size: 16px;
             font-weight: 600;
             display: block;
             margin-bottom: 10px;
         }
+
         .breadcrumb-text h1 {
             font-size: 38px;
             font-weight: 700;
             margin-bottom: 15px;
         }
+
         .web-dev-dg .breadcrumb-image img {
             height: 342px;
-            
+
         }
     </style>
     <!-- bredcumb started here -->
@@ -172,17 +179,21 @@
                             websites, innovative mobile applications, and robust e-commerce solutions.</p>
                     </div>
                     <div class="row g-2 my-4">
-                        <!-- Google play store button -->
-                        <div class="col-6 col-sm-4 col-md-3">
-                            <a href="#"> <img src="https://stackbros.in/mizzle/assets/images/elements/app-store.svg"
-                                    class="btn-transition" alt="google-store"> </a>
-                        </div>
-                        <!-- App store button -->
-                        <div class="col-6 col-sm-4 col-md-3">
-                            <a href="#"> <img src="https://stackbros.in/mizzle/assets/images/elements/google-play.svg"
-                                    class="btn-transition" alt="app-store"> </a>
+
+                        <!-- App Store Button -->
+                        <div class="col-4 col-sm-4 col-md-4 ">
+                            <a href="#"
+                                class="btn btn-dark w-100 d-flex align-items-center justify-content-center gap-2 p-2">
+                                <i class="fa-solid fa-laptop-code"></i> Estimate project
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
+
+                    <!-- FontAwesome CDN (agar pehle se link nahi kiya hai to ye add karein) -->
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 
                 </div>
                 <div class="col-md-6 d-none d-md-block text-center">
@@ -272,54 +283,53 @@
             <div class="row justify-content-between align-items-center mb-5">
                 <div class="col-lg-6">
                     <h2 class="section-heading text-white">
-                        Building apps on mobile platforms <br>
-                        where your <span class="highlight">customers are</span>
+                        Achieve your business goals with web <span class="highlight">development solutions</span>
                     </h2>
                 </div>
-                <div class="col-lg-5 text-muted ">
+                <div class="col-lg-5 msg ">
                     Deliver an omnichannel experience to users wherever they may be.
                 </div>
             </div>
             <!-- yahan align-items-stretch lagaya -->
             <div class="row g-4 align-items-stretch ">
-                <!-- iOS -->
+                <!-- Websites -->
                 <div class="col-md-3 ">
                     <div class="platform-card h-100">
                         <div class="platform-icon">
-                            <i class="fab fa-apple"></i>
+                            <i class="fa-solid fa-globe"></i>
                         </div>
-                        <h5 class="fw-bold text-white">iOS</h5>
+                        <h5 class="fw-bold text-white">Websites</h5>
                         <p class=" mb-0 msg">
-                            Architect mobile apps for devices with the iOS operating system: iPhones, iPads, Apple TVs,
-                            and App Clips.
+                            A well-designed website is a powerful marketing and communication tool that helps build
+                            trust and generate leads.
                         </p>
                     </div>
                 </div>
 
-                <!-- Android -->
+                <!-- Ecommerce -->
                 <div class="col-md-3">
                     <div class="platform-card h-100">
                         <div class="platform-icon">
-                            <i class="fab fa-android"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
                         </div>
-                        <h5 class="fw-bold text-white">Android</h5>
+                        <h5 class="fw-bold text-white">Ecommerce</h5>
                         <p class="text-muted mb-0 msg">
-                            Create mobile apps for all the Android-based devices out there – smartphones, tablets, and
-                            TVs.
+                            With eCommerce solutions, businesses can operate 24 hours a day, 7 days a week, and reach
+                            customers in any time zone.
                         </p>
                     </div>
                 </div>
 
-                <!-- Cross-Platform -->
+                <!-- Web Applications -->
                 <div class="col-md-3">
                     <div class="platform-card h-100">
                         <div class="platform-icon">
-                            <i class="fas fa-th-large"></i>
+                            <i class="fa-solid fa-server"></i>
                         </div>
-                        <h5 class="fw-bold text-white">Cross-Platform</h5>
+                        <h5 class="fw-bold text-white">Web Applications</h5>
                         <p class="text-muted mb-0 msg">
-                            Build mobile apps that can be deployed on both iOS and Android (and even as desktop and web
-                            apps).
+                            Web applications can reach a global audience. They're interactive and engaging, so can
+                            easily hold users' attention.
                         </p>
                     </div>
                 </div>
@@ -328,11 +338,12 @@
                 <div class="col-md-3 ">
                     <div class="platform-card h-100">
                         <div class="platform-icon">
-                            <i class="fas fa-clock"></i>
+                            <i class="fa-solid fa-file-lines"></i>
                         </div>
-                        <h5 class="fw-bold text-white">Wearables</h5>
+                        <h5 class="fw-bold text-white">CMS</h5>
                         <p class="text-muted mb-0 msg">
-                            Get mobile apps for wearable devices such as smartwatches or fitness trackers.
+                            A dedicated CMS designed to the specific needs of your business will save time and money by
+                            optimizing internal workflows.
                         </p>
                     </div>
                 </div>
@@ -356,7 +367,7 @@
                 <div class="col-lg-6 col-md-6">
                     <div>
                         <div class="about-wrap">
-                            <img src="digital-marketing-company/mobile.png" class="img-fluid"
+                            <img src="digital-marketing-company/web-page.png" class="img-fluid"
                                 alt="creative web development agency">
                         </div>
                     </div>
@@ -365,33 +376,32 @@
                     <div class=" perform pt-md-4 mt-3">
                         <div class="breadcrumb-text about-dg-title">
                             <span>Devout Growth</span>
-                            <h3 class="text-white">Ideation to Dominance in the Digital <text-inline
-                                    class="highlight">Arena</text-inline>
+                            <h3 class="text-white">Rapid website redesign & <text-inline
+                                    class="highlight">development</text-inline>
                             </h3>
                         </div>
                         <div class="expert-sub-titles">
-                            <p class="msg">We create websites or apps that reflect your brand identity and ensure
-                                seamless
-                                navigation for an enhanced user experience.</p>
+                            <p class="msg">The Cardano Foundation aimed to enhance its digital presence with a more
+                                modern, intuitive website.</p>
                             <div class="row text-center g-3">
                                 <div class="col-md-4">
                                     <div class="bg-darked p-4 h-100 ">
-                                        <h2 class="fw-bold mb-2 text-white">5</h2>
-                                        <p class="mb-0 msg text-center">weeks to</p>
+                                        <h2 class="fw-bold mb-2 text-white">24%</h2>
+                                        <p class="mb-0 msg text-center">increase in site traffic</p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <div class="bg-darked p-4 h-100 ">
-                                        <h2 class="fw-bold mb-2 text-white">10,000+</h2>
-                                        <p class="mb-0 msg text-center">AI/ML models</p>
+                                        <h2 class="fw-bold mb-2 text-white">20%</h2>
+                                        <p class="mb-0 msg text-center">growth in engaged</p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <div class="bg-darked p-4 h-100 border">
-                                        <h2 class="fw-bold mb-2 text-white">10</h2>
-                                        <p class="mb-0 msg text-center">our NPS from</p>
+                                        <h2 class="fw-bold mb-2 text-white">54%</h2>
+                                        <p class="mb-0 msg text-center">increase in total events</p>
                                     </div>
                                 </div>
                             </div>
@@ -528,6 +538,87 @@
             color: white !important;
         }
     </style>
+    <!-- *******************technoly start****************** -->
+    <section class="tech-section py-5  ">
+        <div class="container text-center ">
+            <!-- Heading -->
+            <h2 class="fw-bold mb-5 text-start ">
+                Technologies <span class="highlight">we leverage</span>
+            </h2>
+
+            <!-- Tech Logos Row -->
+            <div class="row justify-content-center g-4 kk py-5" >
+                <!-- React -->
+                <div class="col-4 col-sm-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                        class="img-fluid tech-logo mb-2" />
+                    <p class="mb-0">React</p>
+                </div>
+
+                <!-- Angular -->
+                <div class="col-4 col-sm-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                        alt="Angular" class="img-fluid tech-logo mb-2" />
+                    <p class="mb-0">Angular</p>
+                </div>
+
+                <!-- Vue.js -->
+                <div class="col-4 col-sm-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js"
+                        class="img-fluid tech-logo mb-2" />
+                    <p class="mb-0">Vue.js</p>
+                </div>
+
+                <!-- Next.js -->
+                <div class="col-4 col-sm-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                        alt="Next.js" class="img-fluid tech-logo mb-2" />
+                    <p class="mb-0">Next.js</p>
+                </div>
+
+                <!-- Node.js -->
+                <div class="col-4 col-sm-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js" class="img-fluid tech-logo mb-2" />
+                    <p class="mb-0">Node.js</p>
+                </div>
+
+                <!-- Python -->
+                <div class="col-4 col-sm-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python" class="img-fluid tech-logo mb-2" />
+                    <p class="mb-0">Python</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .tech-section {
+            /* background-color: #f8f9fa; */
+            /* हल्का grey background */
+        }
+         .kk{
+             background: #273041;
+            box-shadow: 0px 4px 26px 0px rgba(2, 5, 17, .14);
+            border: 0.2px solid #67758b;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+         }
+        .tech-section h2 {
+            font-size: 2rem;
+        }
+
+        .tech-logo {
+            max-width: 60px;
+            transition: transform 0.3s ease;
+        }
+
+        .tech-logo:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
 
     <!-- Meet the team section started here -->
     <section class=" container web-dev-dg">
