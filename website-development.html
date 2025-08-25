@@ -613,8 +613,8 @@
                     display: block;
                 }
 
-                .owl-carousel {                
-                    width: auto !important;                   
+                .owl-carousel {
+                    width: auto !important;
                 }
             </style>
 
@@ -791,6 +791,15 @@
             color: #fff;
         }
 
+        .web-dev-dg .portfolio-leptop img {
+            transition: transform 0.3s ease;
+            /* smooth effect ke liye */
+        }
+
+        .web-dev-dg .portfolio-leptop img:hover {
+            transform: scale(1.05);
+        }
+
         .btn-green {
             background-color: #50af9b;
         }
@@ -808,7 +817,7 @@
 
         <div class="container">
 
-            <div class="row">
+            <div class="row portfolio-leptop">
                 <h2 class="fw-bold fs-1 mb-5 text-start text-white pb-4 ">
                     Web<text-inline class="highlight"> Design & Develop</text-inline>
                 </h2>
