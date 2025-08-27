@@ -56,7 +56,7 @@ class SpecialHeader extends HTMLElement {
 
                             <li style="border-radius: 8px; margin-left: 0px !important;"><a
                                     style="margin-left: 10px !important;" class="nav-link "
-                                    href="influencer-marketing.html">Software Solutions</a></li>
+                                    href="software-solutions.html">Software Solutions</a></li>
                         </ul>
                     </li>
                     <style>
