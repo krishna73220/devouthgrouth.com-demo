@@ -156,61 +156,7 @@
             height: 342px;
 
         }
-    </style>
-    <!-- bredcumb started here -->
-    <section class="breadcrumb-section dg-video-bg web-dev-dg">
-        <!-- Background video -->
-        <video class="dg-video-bg__video" autoplay muted loop playsinline preload="metadata"
-            poster="digital-marketing-company/dg-img/fallback.jpg" aria-hidden="true">
-            <source src="https://www.netguru.com/hubfs/_N23/assets/hero/videos/hero-background-03.mp4" type="video/mp4">
-        </video>
-        <div class="dg-video-bg__overlay"></div>
-        <div class="container breadcrumb-container dg-video-bg__content">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="breadcrumb-text text-white">
-                        <span class="my-4">Our Services</span>
-                        <h1 class="text-white">Website <text-inline class="highlight">Development</text-inline>
-                        </h1>
-                        <p class="text-white msg">Your website is the immediate reflection of your business and one of
-                            the
-                            many significant
-                            parts of your larger, more complex online existence. We specialize in crafting dynamic
-                            websites, innovative mobile applications, and robust e-commerce solutions.</p>
-                    </div>
-                    <div class="row g-2 my-4">
 
-                        <!-- App Store Button -->
-                        <div class="col-7 col-sm-4 col-md-4 ">
-                            <a href="#"
-                                class="btn btn-dark w-100 d-flex align-items-center justify-content-center gap-2 p-2">
-                                <i class="fa-solid fa-laptop-code"></i> Estimate project
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- FontAwesome CDN (agar pehle se link nahi kiya hai to ye add karein) -->
-                    <link rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-
-                </div>
-                <div class="col-md-6 d-none d-md-block text-center">
-                    <div class="breadcrumb-image">
-                        <img src="digital-marketing-company/website-home.png" class="img-fluid"
-                            alt="seo friendly website development agency">
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- bredcumb end here -->
-
-    <style>
         .web-dev-dg .platform-card {
             background: #273041;
             box-shadow: 0px 4px 26px 0px rgba(2, 5, 17, .14);
@@ -276,7 +222,166 @@
         .web-dev-dg .msg {
             color: rgba(255, 255, 255, 0.653);
         }
+
+        .web-dev-dg .bg-darked {
+            background: #273041;
+            box-shadow: 0px 4px 26px 0px rgba(2, 5, 17, .14);
+            border: 0.2px solid #67758b;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .dev-hr hr {
+            border: none;
+            /* default border हटाने के लिए */
+            border-top: 1px solid #fff;
+            /* white line */
+        }
+
+        .bw-full {
+            filter: grayscale(100%);
+            transition: filter 0.25s ease;
+        }
+
+        .app-dev-btn span {
+            color: white !important;
+        }
+
+        .owl-carousel .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* horizontal center */
+            justify-content: center;
+            /* vertical center */
+            text-align: center;
+            /* text bhi center */
+        }
+
+        .tech-logo {
+            max-width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 8px;
+        }
+
+        /* Outer wrapper me thoda gap left/right */
+        .owl-carousel .owl-stage-outer {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        /* Har item ke andar ka logo */
+        .owl-carousel .owl-item img {
+            width: 80px;
+            /* logo size */
+            height: auto;
+            margin: 0 auto 8px;
+            /* center + neeche gap */
+            display: block;
+        }
+
+        .owl-carousel {
+            width: auto !important;
+        }
+
+        .web-dev-dg .custom-btn {
+
+            padding: 8px 20px;
+            margin: -13px 22px 0px 22px;
+            border-radius: 8px 8px 0 0;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .web-dev-dg .portfolio-leptop img {
+            transition: transform 0.3s ease;
+            /* smooth effect ke liye */
+        }
+
+        .web-dev-dg .portfolio-leptop img:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-green {
+            background-color: #50af9b;
+        }
+
+        /* ✅ Sabhi mobile devices ke liye */
+        @media only screen and (max-width: 768px) {
+            .custom-btn {
+                font-size: 7px;
+                margin: -10px 22px 0px 22px !important;
+            }
+        }
+
+        .web-dev-dg .accordion-button::after {
+            flex-shrink: 0;
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-left: auto;
+            content: "";
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: 1.25rem;
+            transition: transform .2s ease-in-out;
+        }
     </style>
+
+
+
+    <!-- bredcumb started here -->
+    <section class="breadcrumb-section dg-video-bg web-dev-dg">
+        <!-- Background video -->
+        <video class="dg-video-bg__video" autoplay muted loop playsinline preload="metadata"
+            poster="digital-marketing-company/dg-img/fallback.jpg" aria-hidden="true">
+            <source src="https://www.netguru.com/hubfs/_N23/assets/hero/videos/hero-background-03.mp4" type="video/mp4">
+        </video>
+        <div class="dg-video-bg__overlay"></div>
+        <div class="container breadcrumb-container dg-video-bg__content">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="breadcrumb-text text-white">
+                        <span class="my-4">Our Services</span>
+                        <h1 class="text-white">Website <text-inline class="highlight">Development</text-inline>
+                        </h1>
+                        <p class="text-white msg">Your website is the immediate reflection of your business and one of
+                            the
+                            many significant
+                            parts of your larger, more complex online existence. We specialize in crafting dynamic
+                            websites, innovative mobile applications, and robust e-commerce solutions.</p>
+                    </div>
+                    <div class="row g-2 my-4">
+
+                        <!-- App Store Button -->
+                        <div class="col-7 col-sm-4 col-md-4 ">
+                            <a href="#"
+                                class="btn btn-dark w-100 d-flex align-items-center justify-content-center gap-2 p-2">
+                                <i class="fa-solid fa-laptop-code"></i> Estimate project
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="col-md-6 d-none d-md-block text-center">
+                    <div class="breadcrumb-image">
+                        <img src="digital-marketing-company/website-home.png" class="img-fluid"
+                            alt="seo friendly website development agency">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bredcumb end here -->
+
+
 
     <section class="py-5 web-dev-dg">
         <div class="container">
@@ -351,15 +456,7 @@
         </div>
     </section>
 
-    <style>
-        .web-dev-dg .bg-darked {
-            background: #273041;
-            box-shadow: 0px 4px 26px 0px rgba(2, 5, 17, .14);
-            border: 0.2px solid #67758b;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-    </style>
+
 
     <section class="contact_us web-dev-dg">
         <div class="container mt-5">
@@ -421,14 +518,6 @@
                 </div>
             </div>
             <!-- Here counter area started -->
-            <style>
-                .dev-hr hr {
-                    border: none;
-                    /* default border हटाने के लिए */
-                    border-top: 1px solid #fff;
-                    /* white line */
-                }
-            </style>
 
             <!-- clients value area started -->
             <div class="clients-value boosting-busines pt-md-5 web-dev-dg">
@@ -528,16 +617,6 @@
             <!-- clients value area end -->
         </div>
     </section>
-    <style>
-        .bw-full {
-            filter: grayscale(100%);
-            transition: filter 0.25s ease;
-        }
-
-        .app-dev-btn span {
-            color: white !important;
-        }
-    </style>
 
 
     <!-- Meet the team section started here -->
@@ -578,45 +657,7 @@
             <h2 class="fw-bold fs-1 mb-5 text-start text-white pb-4 ">
                 Technologies <text-inline class="highlight">we leverage</text-inline>
             </h2>
-            <style>
-                .owl-carousel .item {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    /* horizontal center */
-                    justify-content: center;
-                    /* vertical center */
-                    text-align: center;
-                    /* text bhi center */
-                }
 
-                .tech-logo {
-                    max-width: 80px;
-                    height: 80px;
-                    object-fit: contain;
-                    margin-bottom: 8px;
-                }
-
-                /* Outer wrapper me thoda gap left/right */
-                .owl-carousel .owl-stage-outer {
-                    padding-left: 40px;
-                    padding-right: 40px;
-                }
-
-                /* Har item ke andar ka logo */
-                .owl-carousel .owl-item img {
-                    width: 80px;
-                    /* logo size */
-                    height: auto;
-                    margin: 0 auto 8px;
-                    /* center + neeche gap */
-                    display: block;
-                }
-
-                .owl-carousel {
-                    width: auto !important;
-                }
-            </style>
 
 
             <!-- Tech Logos Row -->
@@ -735,7 +776,7 @@
         <!-- <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDM3eDRkM25odmxpenBsdTBkYWU0Y3c2anZkNDZoczdscGFsOHNvdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/elcAvTEXkG02d17sr7/giphy.gif"
             alt="background gif"
             style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-1;"> -->
-              <div style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:-1;
+        <div style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:-1;
             background:url('https://media.istockphoto.com/id/1500238408/photo/program-code-development-icon-on-a-digital-lcd-display-with-reflection.jpg?s=1024x1024&w=is&k=20&c=9k0ISvEy4At1nzoYrDP-pwOyN5qyvOWf_MruUHANUKc=')
                        no-repeat center center/cover;
             background-attachment: fixed;
@@ -787,37 +828,7 @@
             </div>
         </div>
     </section>
-    <style>
-        .web-dev-dg .custom-btn {
 
-            padding: 8px 20px;
-            margin: -13px 22px 0px 22px;
-            border-radius: 8px 8px 0 0;
-            font-weight: bold;
-            color: #fff;
-        }
-
-        .web-dev-dg .portfolio-leptop img {
-            transition: transform 0.3s ease;
-            /* smooth effect ke liye */
-        }
-
-        .web-dev-dg .portfolio-leptop img:hover {
-            transform: scale(1.05);
-        }
-
-        .btn-green {
-            background-color: #50af9b;
-        }
-
-        /* ✅ Sabhi mobile devices ke liye */
-        @media only screen and (max-width: 768px) {
-            .custom-btn {
-                font-size: 7px;
-                margin: -10px 22px 0px 22px !important;
-            }
-        }
-    </style>
 
     <section class="web-dev-dg">
 
@@ -865,20 +876,6 @@
             </div>
         </div>
     </section>
-
-    <style>
-        .web-dev-dg .accordion-button::after {
-            flex-shrink: 0;
-            width: 1.25rem;
-            height: 1.25rem;
-            margin-left: auto;
-            content: "";
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-size: 1.25rem;
-            transition: transform .2s ease-in-out;
-        }
-    </style>
     <!--faq-->
     <section class="faq web-dev-dg">
         <div class="container">
@@ -893,21 +890,13 @@
                                         type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse1"
                                         aria-expanded="false" aria-controls="faqAccountCollapse1">
                                         <img style="filter: brightness(0) invert(1);" class="conversation_img"
-                                            src="digital-marketing-company/conversation.png" alt="conversation"> Is it
-                                        more affordable to develop an app or a website?
+                                            src="digital-marketing-company/conversation.png" alt="conversation">What types of websites does Devout Growth develop?
                                     </button>
                                 </h2>
                                 <div id="faqAccountCollapse1" class="accordion-collapse collapse"
                                     aria-labelledby="faqAccountHeading1">
                                     <div class="accordion-body">
-                                        <p class="msg text-justify">Generally, websites are more affordable to develop
-                                            and launch. However,
-                                            mobile apps offer deeper
-                                            engagement and better performance for specific user needs. At Devout Growth,
-                                            we help you choose the
-                                            right solution based on your goals, budget, and audience - offering
-                                            cost-effective development for
-                                            both websites and mobile apps.</p>
+                                        <p class="msg text-justify">Devout Growth delivers business, eCommerce, portfolio, landing page, and custom web application sites for SMEs, startups, and established brands worldwide.</p>
                                     </div>
                                 </div>
                             </div>
@@ -918,17 +907,64 @@
                                         type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse2"
                                         aria-expanded="false" aria-controls="faqAccountCollapse2">
                                         <img style="filter: brightness(0) invert(1);" class="conversation_img"
-                                            src="digital-marketing-company/conversation.png" alt="conversation"> How
-                                        long does it take to build a website?
+                                            src="digital-marketing-company/conversation.png" alt="conversation">How many website projects has Devout Growth completed?
                                     </button>
                                 </h2>
                                 <div id="faqAccountCollapse2" class="accordion-collapse collapse"
                                     aria-labelledby="faqAccountHeading2">
                                     <div class="accordion-body">
-                                        <p class="msg text-justify">The timeline varies based on complexity, but a
-                                            standard website typically
-                                            takes 2 to 6 weeks from
-                                            planning to launch.</p>
+                                        <p class="msg text-justify">Our team has successfully developed 75+ websites across multiple industries and platforms, demonstrating strong capability and reliability.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-bottom py-3">
+                                <h2 class="accordion-header" id="faqAccountHeading5">
+                                    <button
+                                        class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary text-white"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse5"
+                                        aria-expanded="false" aria-controls="faqAccountCollapse5">
+                                        <img style="filter: brightness(0) invert(1);" class="conversation_img"
+                                            src="digital-marketing-company/conversation.png" alt="conversation">Which technologies does Devout Growth use for web development?
+                                    </button>
+                                </h2>
+                                <div id="faqAccountCollapse5" class="accordion-collapse collapse"
+                                    aria-labelledby="faqAccountHeading5">
+                                    <div class="accordion-body">
+                                        <p class="msg text-justify">Our experts code with React, Angular, Vue.js, Next.js, Node.js, Python, and JavaScript to offer leading-edge solutions for unique client needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-bottom py-3">
+                                <h2 class="accordion-header" id="faqAccountHeading6">
+                                    <button
+                                        class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary text-white"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse6"
+                                        aria-expanded="false" aria-controls="faqAccountCollapse6">
+                                        <img style="filter: brightness(0) invert(1);" class="conversation_img"
+                                            src="digital-marketing-company/conversation.png" alt="conversation">Does Devout Growth offer website redesign and optimization services?
+                                    </button>
+                                </h2>
+                                <div id="faqAccountCollapse6" class="accordion-collapse collapse"
+                                    aria-labelledby="faqAccountHeading6">
+                                    <div class="accordion-body">
+                                        <p class="msg text-justify">We specialize in website redesign, speed optimization, and UX/UI improvements to help increase site traffic and customer engagement.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-bottom py-3">
+                                <h2 class="accordion-header" id="faqAccountHeading7">
+                                    <button
+                                        class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary text-white"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse7"
+                                        aria-expanded="false" aria-controls="faqAccountCollapse7">
+                                        <img style="filter: brightness(0) invert(1);" class="conversation_img"
+                                            src="digital-marketing-company/conversation.png" alt="conversation">Is post-launch support available for new websites?
+                                    </button>
+                                </h2>
+                                <div id="faqAccountCollapse7" class="accordion-collapse collapse"
+                                    aria-labelledby="faqAccountHeading7">
+                                    <div class="accordion-body">
+                                        <p class="msg text-justify">Clients receive ongoing technical support after launch, including maintenance, bug fixes, and security updates to ensure their website’s long-term health.</p>
                                     </div>
                                 </div>
                             </div>
@@ -944,17 +980,13 @@
                                         type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse3"
                                         aria-expanded="false" aria-controls="faqAccountCollapse3">
                                         <img style="filter: brightness(0) invert(1);" class="conversation_img"
-                                            src="digital-marketing-company/conversation.png" alt="conversation"> Do you
-                                        create mobile responsive websites?
+                                            src="digital-marketing-company/conversation.png" alt="conversation">How long does it take to launch a new website?
                                     </button>
                                 </h2>
                                 <div id="faqAccountCollapse3" class="accordion-collapse collapse"
                                     aria-labelledby="faqAccountHeading3">
                                     <div class="accordion-body">
-                                        <p class="text-justify msg">Yes, we specialize in building fully
-                                            mobile-responsive websites that deliver
-                                            a seamless browsing
-                                            experience across Android and iOS devices.</p>
+                                        <p class="text-justify msg">Most web development projects are completed within 2 to 6 weeks, depending on the design complexity and desired features.</p>
                                     </div>
                                 </div>
                             </div>
@@ -966,20 +998,67 @@
                                         aria-expanded="false" aria-controls="faqAccountCollapse4">
                                         <img style="filter: brightness(0) invert(1);" class="conversation_img"
                                             src="digital-marketing-company/conversation.png" alt="conversation">
-                                        Does good website design effectively engage audiences?
+                                        Are Devout Growth websites mobile responsive?
                                     </button>
                                 </h2>
                                 <div id="faqAccountCollapse4" class="accordion-collapse collapse"
                                     aria-labelledby="faqAccountHeading4">
                                     <div class="accordion-body">
-                                        <p class="msg text-justify">A well-structured UI/UX, optimized page load speed,
-                                            intuitive navigation, and
-                                            responsive design
-                                            collectively enhance user interaction. From a development standpoint, these
-                                            elements not only
-                                            improve engagement but also guide users through clear CTAs
-                                            (Call-to-Actions), ultimately increasing
-                                            conversion rates.</p>
+                                        <p class="msg text-justify">Yes. Every site is crafted to be fully mobile and tablet responsive, delivering seamless experiences on all popular devices.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-bottom py-3">
+                                <h2 class="accordion-header" id="faqAccountHeading8">
+                                    <button
+                                        class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary text-white"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse8"
+                                        aria-expanded="false" aria-controls="faqAccountCollapse8">
+                                        <img style="filter: brightness(0) invert(1);" class="conversation_img"
+                                            src="digital-marketing-company/conversation.png" alt="conversation">
+                                        How do I get a quote or start a project?
+                                    </button>
+                                </h2>
+                                <div id="faqAccountCollapse8" class="accordion-collapse collapse"
+                                    aria-labelledby="faqAccountHeading8">
+                                    <div class="accordion-body">
+                                        <p class="msg text-justify">Call us directly at the listed no. or fill out our contact form for a free, personalized consultation and project proposal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-bottom py-3">
+                                <h2 class="accordion-header" id="faqAccountHeading9">
+                                    <button
+                                        class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary text-white"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse9"
+                                        aria-expanded="false" aria-controls="faqAccountCollapse9">
+                                        <img style="filter: brightness(0) invert(1);" class="conversation_img"
+                                            src="digital-marketing-company/conversation.png" alt="conversation">
+                                        Can you help with SEO and online marketing?
+                                    </button>
+                                </h2>
+                                <div id="faqAccountCollapse9" class="accordion-collapse collapse"
+                                    aria-labelledby="faqAccountHeading9">
+                                    <div class="accordion-body">
+                                        <p class="msg text-justify">Yes, Devout Growth integrates SEO best practices and conversion-focused design into every project to boost rankings, traffic, and sales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-bottom py-3">
+                                <h2 class="accordion-header" id="faqAccountHeading10">
+                                    <button
+                                        class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary text-white"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse10"
+                                        aria-expanded="false" aria-controls="faqAccountCollapse10">
+                                        <img style="filter: brightness(0) invert(1);" class="conversation_img"
+                                            src="digital-marketing-company/conversation.png" alt="conversation">
+                                        How does Devout Growth ensure website security?
+                                    </button>
+                                </h2>
+                                <div id="faqAccountCollapse10" class="accordion-collapse collapse"
+                                    aria-labelledby="faqAccountHeading10">
+                                    <div class="accordion-body">
+                                        <p class="msg text-justify">Our team implements SSL certificates, firewall protection, and regular code reviews to maintain high security and defend against emerging online threats.</p>
                                     </div>
                                 </div>
                             </div>
