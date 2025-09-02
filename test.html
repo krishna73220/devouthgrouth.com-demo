@@ -1,86 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services Section</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome 5.15.4 -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <style>
-    .service-box {
-      background: #fff;
-      border-radius: 20px;
-      padding: 30px;
-      text-align: center;
-      box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .service-box:hover {
-      transform: translateY(-10px);
-    }
-    .icon-circle {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 20px;
-      font-size: 32px;
-      color: #fff;
-    }
-    .deployment { background: #000; }    /* Black */
-    .database   { background: #f4c542; } /* Yellow */
-    .storage    { background: #6a5acd; } /* Violet */
-  </style>
-</head>
-<body>
-  <div class="container py-5">
-    <div class="row g-4">
-      
-      <!-- Deployment -->
-      <div class="col-md-4">
-        <div class="service-box">
-          <div class="icon-circle deployment">
-            <i class="fas fa-cloud-upload-alt"></i> <!-- Deployment Icon -->
-          </div>
-          <h5>Deployment</h5>
-          <p>Your Raw Project on Live Server</p>
-        </div>
-      </div>
-      
-      <!-- Databases -->
-      <div class="col-md-4">
-        <div class="service-box">
-          <div class="icon-circle database">
-            <i class="fas fa-database"></i> <!-- Database Icon -->
-          </div>
-          <h5>Databases</h5>
-          <p>Tailored to your architecture</p>
-        </div>
-      </div>
-      
-      <!-- Storage -->
-      <div class="col-md-4">
-        <div class="service-box">
-          <div class="icon-circle storage">
-            <i class="fas fa-hdd"></i> <!-- Storage Icon -->
-            
-          </div>
-          <h5>Storage</h5>
-          <p>Unlimited reach, zero bottlenecks</p>
-        </div>
-      </div>
-      <div class="icon-circle storage">
-  <i class="fas fa-cloud"></i>
-</div>
-<div class="icon-circle storage">
-  <i class="fas fa-server"></i>
-</div>
-
-
+<div class="row g-4"> <!-- OpenAI -->
+  <div class="col-md-4 col-lg-3">
+    <div class="tech-card border rounded-3 p-4 h-100 text-center"> <img
+        src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI" class="tech-logo mb-3">
+      <h5 class="fw-bold text-success">OpenAI</h5>
+      <p class="mb-0 small">GPT-5, Codex, Embeddings, DALL·E, Whisper</p>
+    </div>
+  </div> <!-- Gemini -->
+  <div class="col-md-4 col-lg-3">
+    <div class="tech-card border rounded-3 p-4 h-100 text-center"> <img
+        src="./digital-marketing-company/Google-gemini-icon.svg" alt="Gemini" class="tech-logo mb-3"
+        style="max-height:60px;">
+      <h5 class="fw-bold text-primary">Gemini</h5>
+      <p class="mb-0 small">Gemini 2.5, Deep Think, Flash-Lite, Pipelines, FeatureStore</p>
+    </div>
+  </div> <!-- Co-pilot -->
+  <div class="col-md-4 col-lg-3">
+    <div class="tech-card border rounded-3 p-4 h-100 text-center"> <img
+        src="./digital-marketing-company/Microsoft_Copilot_Icon.svg" alt="Co-pilot" class="tech-logo mb-3"
+        style="max-height:60px;">
+      <h5 class="fw-bold text-danger">Co-pilot</h5>
+      <p class="mb-0 small">GitHub Copilot X, Copilot Chat, Copilot Labs, Copilot Voice, Copilot for Business</p>
+    </div>
+  </div> <!-- AWS Bedrock -->
+  <div class="col-md-4 col-lg-3">
+    <div class="tech-card border rounded-3 p-4 h-100 text-center"> <img
+        src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS"
+        class="tech-logo mb-3">
+      <h5 class="fw-bold text-warning">AWS Bedrock</h5>
+      <p class="mb-0 small">Titan, Nova, Lambda, Firecracker, SageMaker</p>
+    </div>
+  </div> <!-- Google Vertex AI -->
+  <div class="col-md-4 col-lg-3">
+    <div class="tech-card border rounded-3 p-4 h-100 text-center"> <img
+        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google"
+        class="tech-logo mb-3">
+      <h5 class="fw-bold text-primary">Google Vertex AI</h5>
+      <p class="mb-0 small">Gemini 2.5, Deep Think, Flash-Lite, Pipelines, FeatureStore</p>
+    </div>
+  </div> <!-- Meta -->
+  <div class="col-md-4 col-lg-3">
+    <div class="tech-card border rounded-3 p-4 h-100 text-center"> <img src="./digital-marketing-company/meta.png"
+        alt="Meta" class="tech-logo mb-3">
+      <h5 class="fw-bold text-primary">Meta</h5>
+      <p class="mb-0 small">LLama 4, Segmenter, BlenderBot, Detectron, MoE</p>
+    </div>
+  </div> <!-- Microsoft Azure -->
+  <div class="col-md-4 col-lg-3">
+    <div class="tech-card border rounded-3 p-4 h-100 text-center"> <img
+        src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg" alt="Azure"
+        class="tech-logo mb-3">
+      <h5 class="fw-bold text-info">Microsoft Azure</h5>
+      <p class="mb-0 small">Cognitive, Synapse, BotService, FormRecognizer, OpenAI</p>
     </div>
   </div>
-</body>
-</html>
+</div>
