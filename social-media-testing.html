@@ -32,6 +32,7 @@
     <meta name="twitter:url" content="https://x.com/Devoutgrowth" />
     <meta name="twitter:image" content="https://www.devoutgrowth.com/digital-marketing-company/DG-Logo.png" />
     <meta name="google-site-verification" content="b5HDQuObJmuF72DIfVc3aEHb0bW5r8J-kkkW6C3KZ70" />
+
     <!--================= styling =================-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
@@ -39,6 +40,7 @@
     <link href="css/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsiveStyle.css">
+
     <!--================= Favicon =================-->
     <link rel="apple-touch-icon" sizes="180x180" href="digital-marketing-company/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192"
@@ -48,6 +50,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="digital-marketing-company/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="digital-marketing-company/favicon/favicon-16x16.png">
     <link href="digital-marketing-company/favicon/favicon.ico" rel="shortcut icon">
+
     <style>
         body {
             margin: 0;
@@ -71,6 +74,11 @@
             height: auto;
             background: white;
         }
+
+        /* ✅ Sirf first page ke liye cursor pointer */
+        #pdf-container canvas.first-page {
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -79,20 +87,86 @@
     <!-- Navbar section -->
     <special-header></special-header>
     <!-- Navbar section exit -->
+
     <div id="pdf-container"></div>
+
+    <!-- Modal -->
+  <div class="modal fade" id="leadModal" tabindex="-1" aria-labelledby="leadModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4" style="background:#22142e; color:white; border-radius:20px; box-shadow:0 6px 30px rgba(0,0,0,0.4);">
+      
+      <!-- Modal Header -->
+      <div class="modal-header border-0">
+        <h2 class="modal-title w-100 text-start fw-bold text-white" id="leadModalLabel">Book Free <span style="color: #fd4bad;">Consultation</span></h2>
+        <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <form id="leadForm">
+          
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name" required 
+              style="background:rgba(255,255,255,0.1); border:none; color:white; border-radius:10px;">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email" required 
+              style="background:rgba(255,255,255,0.1); border:none; color:white; border-radius:10px;">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Phone</label>
+            <input type="tel" class="form-control" placeholder="Enter your phone number" required 
+              style="background:rgba(255,255,255,0.1); border:none; color:white; border-radius:10px;">
+          </div>
+
+          <button type="submit" class="btn w-100 fw-bold mt-4" 
+            style="background:white; color:#22142e; border-radius:10px; padding:10px; font-size:1rem; transition:0.3s;">
+            Submit
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Optional CSS for better focus effect -->
+<style>
+  #leadModal .form-control:focus {
+    background: rgba(255, 255, 255, 0.15) !important;
+    box-shadow: none;
+  }
+   #leadModal button{
+  background-color: rgb(255, 255, 255) !important;
+    /* color: #fefefe !important; */
+  }
+  #leadModal button:hover {
+  background-color: #fd4bad !important;
+    color: #fefefe !important;
+  }
+</style>
+
+
     <!-- PDF.js Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
-    <script>
-        const url = "https://krishna73220.github.io/devouthgrouth.com-demo/kk1.pdf"; // यहाँ अपनी PDF का path दो
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const url = "https://krishna73220.github.io/devouthgrouth.com-demo/kk1.pdf";
         const pdfjsLib = window['pdfjs-dist/build/pdf'];
         pdfjsLib.GlobalWorkerOptions.workerSrc =
             "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js";
 
         const container = document.getElementById("pdf-container");
+        const leadModal = new bootstrap.Modal(document.getElementById("leadModal"));
 
         pdfjsLib.getDocument(url).promise.then(function (pdf) {
-            // सारे pages लूप में render होंगे
             for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
                 pdf.getPage(pageNum).then(function (page) {
                     const viewport = page.getViewport({ scale: 1.2 });
@@ -101,37 +175,48 @@
                     canvas.height = viewport.height;
                     canvas.width = viewport.width;
 
+                    // ✅ Sirf first page ko clickable + pointer banaye
+                    if (pageNum === 1) canvas.classList.add("first-page");
+
                     container.appendChild(canvas);
 
                     const renderContext = {
                         canvasContext: context,
                         viewport: viewport
                     };
-                    page.render(renderContext);
+
+                    page.render(renderContext).promise.then(() => {
+                        if (pageNum === 1) {
+                            canvas.addEventListener("click", () => {
+                                leadModal.show();
+                            });
+                        }
+                    });
                 });
             }
         });
+
+        document.getElementById("leadForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Form Submitted Successfully!");
+            leadModal.hide();
+        });
     </script>
 
-     <special-footer> </special-footer>
-    <!-- Footer section exit -->
-     <!-- Scroll to Top Button -->
-     <a href="#" class="scroll-up" id="scrollUpBtn">
-        <i class="fas fa-arrow-up"></i> <!-- You can use an icon or text -->
-    </a>
-   <!-- Dg all JS Here -->
-   <script src="assets/js/jquery-3.6.0.min.js"></script>
-   <script src="assets/js/owl.carousel.min.js"></script>
-   <script src="assets/js/bootstrap.min.js"></script>
-   <script src="assets/js/main.js"></script>
-   <script src="assets/js/fontawesome-kit.js"></script>
-   <!-- animation js -->
-   <script src="assets/js/aos.js"></script>
-   <script src="assets/includes/footer.js"></script>
-   <script src="assets/includes/header.js"></script>
-   <script>
-       AOS.init();
-   </script>
+    <special-footer></special-footer>
+
+    <!-- Dg all JS Here -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/fontawesome-kit.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/includes/footer.js"></script>
+    <script src="assets/includes/header.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
